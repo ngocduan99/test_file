@@ -1,38 +1,133 @@
-.App {
+.App{
+  min-width: fit-content;
+  min-height: 100vh;
+}
+
+.container{
+  padding-top: 3rem;
+  max-width: 768px;
+  margin: auto;
+}
+
+.info-container{
+  padding: .5rem 1.5rem .5rem 1.5rem;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1);
+  border-width: 5px;
+}
+
+.info-section{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 0 1rem 0;
+}
+
+.avatar{
+  flex: none;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.avatar img{
+  display: block;
+  color: transparent;
+  border-radius: 9999px;
+  object-fit: cover;
+  width: 220px;
+  height: 220px;
+  margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.my-name{
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: .2rem;
+  margin-top: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.my-job{
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: .5rem;
+}
+
+.info{
   display: flex;
+  flex: 1 1 auto;
+  margin: .5rem 0 0 1.5rem;
   flex-direction: column;
+}
+
+
+.info-location{
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.info-location p{
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.info-des{
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin: 0 0.5rem 0 .5rem
 }
+
+.info-email{
+  display: flex;
+  align-items: center;
+  margin-top: .75rem;
+}
+
+.info-email p{
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.info-social{
+  display: flex;
+  align-items: center;
+  margin-top: .75rem;
+}
+
+.info-social p{
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.item-row a:hover{
+  color: slategray;
+}
+
+.info-music{
+  width: 100%;
+  height: 120px;
+  margin-top: .75rem;
+  margin-bottom: .25rem;
+  padding: .75rem;
+  background-color: rgb(226 232 240);
+  border-width: 3px;
+  border-radius: .25rem;
+  border-color: rgb(203 213 225);
+  font-size: 1rem;
+  line-height: 1.25rem;
+  cursor: pointer;
+}
+
+.music-des{
+  display: flex;
+  align-items: center;
+}
+
+.music-item{
+  display: flex;
+  margin-top: .25rem;
+}
+
